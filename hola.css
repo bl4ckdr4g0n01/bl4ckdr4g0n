@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	margin: auto;
+	padding: 18px 9px 18px 18px;
+	background: black;
+	animation: bggeneral 3s infinite;
+}
+
+h1{
+	padding: 18px 18px 18px 9px;
+	text-align: center;
+	background: #ccc;
+	line-height: 240px;
+	animation: title 1s infinite;
+}
+
+@keyframes bggeneral{
+	0%{background: white;}
+	15%{background: blue;}
+	25%{background: orange}
+	50%{background: red;}
+	65%{background: violet;}
+	75%{background: white;}
+	92%{background: tomato;}
+	100%{background: black;}
+}
+
+@keyframes title{
+	0%{ background: darkgreen; color: blue;}
+	10%{ background: darkblue; color: red;}
+	20%{ background: darkviolet; color: lightblue;}
+	30%{ background: darkgrey; color: lightgrey;}
+	40%{width:40%; background: #ededed; color: tomato;}
+	50%{width: 60%; background: rgb(240, 220, 30, 10); color: yellow;}
+	60%{width: 80%; background: rgb(180, 100, 130, 10); color: pink;}
+	70%{width: 100%; background: white; color: white;}
+
+
+}

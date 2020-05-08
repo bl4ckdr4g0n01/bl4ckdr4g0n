@@ -1,0 +1,73 @@
+Historia de Usuario ->
+“Como pasajero necesito una aplicación que, cualquier día, hora y lugar, me permita solicitar un taxi y que me diga cuanto tardo en llegar hasta mi destino y el monto final”
+
+Requerimientos: 
+    0- Registrar al Pasajero
+1-	 Opción de registro con Facebook mediante un botón
+2- Detectar la geolocalización mediante el GPS del dispositivo.
+3-Solicitar dirección del Pasajero de forma manual en caso de no estar conectado desde un Smart Phone.
+4-Generar un id para el usuario.
+5- Solicitar medio de pago
+6-Solicitar dirección de destino
+7- Mostrar cinco taxis disponibles
+8- Mostrar Ubicación de los vehículos más cercanos
+9- Mostrar tiempo de demora 
+10- Mostrar valor del viaje
+
+11- Solicitar confirmación del viaje mostrando los datos ingresados
+12- Mostrar datos del chofer
+13- Mostrar mapa de recorrido
+14- Califica al chofer cuando llega al destino
+
+
+
+
+Historia de Usuario ->
+“Como chofer quiero una aplicación que indique los datos del pasajero, la ubicación y el destino. Así mismo que la geo-localice y me indique la ruta más rápida para llegar al destino.”
+
+1-	Registrar datos del chofer y vehículo.
+2-	Botón de Conectar Enviar (Operativo, en viaje).
+3-	Mostrar forma de pago.
+4-	Confirmar si acepta el viaje.
+5-	Mostrar datos de del pasajero
+6-	Mostrar ubicación del pasajero
+7-	Mostrar destino del pasajero
+8-Boton para viaje finalizado
+9-Mostrar Liquidación del viaje.
+10-Mostrar ganancias totales.
+
+
+Historias de Usuario -> 
+“Como central quiero que la aplicación, registre a los choferes, registre a los pasajeros, muestre por colores los vehículos que están disponibles, ocupados y no operativos, muestre los datos del chofer al pasajero, muestre los datos del pasajero al chofer, con la ubicación en el mapa, muestre el tiempo de demora, y el destino del pasajero”
+
+1-	Registrar chofer
+2-	Registrar vehículo
+3-	Registra la ubicación del chofer
+4-	Genera un id
+5-	Mostrar estado del vehículo
+6-	Los vehículos que están fuera de circulación, mostrarlos en rojo.
+7-	Los vehículos ocupados en amarillo.
+8-	Los vehículos libres en verde.
+9-	Registrar pasajero
+10-Registrar ubicación del pasajero
+11-Registrar destino del pasajero
+12-Enviar datos del pasajero al chofer
+13- Enviar datos del chofer al pasajero
+14- Monto y forma de pago.
+
+
+
+
+Tarjeta Pasajero:
+El pasajero que desea tomar un taxi, para solicitar el vehículo, debe descargar la aplicación y luego registrar sus datos, una vez registrados los datos, la aplicación le asigna un identificador. Se le solicita al pasajero un medio de pago. Una vez realizado el registro, el pasajero indica el destino, al indicar el destino, se muestran los cinco vehículos más cercanos, el pasajero selecciona el vehículo que desea, y confirma el viaje. Luego de confirmar el viaje, se mostrará en pantalla los datos del chofer, y del vehículo junto al monto final del viaje y la geolocalización del vehículo.
+
+
+Tarjeta Central->
+La aplicación solicita los datos del chofer y los datos del vehículo con el fin de guardarlos en la base de datos, luego de validar la documentación. Una vez creada la cuenta, se genera un id.
+Se mostrarán en pantalla, los vehículos disponibles en verde, los vehículos ocupados en amarillo y los que no están en funcionamiento, en rojo. 
+Se tomarán los datos del pasajero, id, nombre apellido y ubicación, con el fin de enviarle los datos correspondientes de las unidades más cercanas a su domicilio. Se almacenará en la base de datos el monto y la forma de pago del pasajero.
+
+Tarjeta chofer ->
+El chofer descarga la aplicación, envía sus datos mediante un formulario, envía los datos del vehículo, espera 24 horas a que se valide su cuenta.
+Una vez validad la cuenta recibe un mensaje que le indica que puede comenzar a trabajar, si la documentación es correcta. Una vez dado de alta, se le asignará un ID, el cual será mostrado al pasajero con sus datos y los datos del vehículo. 
+El chofer activa la aplicación, queda listo para operar, toma el viaje, cuando finaliza mediante un botón le envía a la central que el viaje finalizó, repite la operación hasta que desea terminar el día, y apaga la aplicación.
